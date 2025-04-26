@@ -11,8 +11,6 @@ export const getStatusIcon = (message: Message): string => {
       return 'clock';
     case 'delivered':
       return 'check';
-    case 'seen':
-      return 'check-double';
     default:
       return '';
   }
@@ -29,8 +27,6 @@ export const getStatusText = (message: Message): string => {
       return 'Sending...';
     case 'delivered':
       return 'Delivered';
-    case 'seen':
-      return 'Seen';
     default:
       return '';
   }
