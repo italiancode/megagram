@@ -100,12 +100,13 @@ export function useChat(): ChatHookReturn {
       if (!address || !contract.publicClient) return false;
 
       try {
-        return await contract.publicClient.readContract({
+        const result = await contract.publicClient.readContract({
           address: contract.address,
           abi: contract.abi,
           functionName: "sessionWallets",
           args: [address, sessionAddress],
         });
+        return result as boolean;
       } catch (error) {
         console.error("Error checking session authorization:", error);
         return false;
