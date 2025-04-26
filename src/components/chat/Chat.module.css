@@ -1,0 +1,142 @@
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.chatHeader {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e4e6eb;
+  height: 60px;
+}
+
+.backButton {
+  font-size: 24px;
+  margin-right: 16px;
+  color: #1877f2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.headerInfo {
+  flex: 1;
+}
+
+.headerTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #050505;
+}
+
+.headerSubtitle {
+  margin: 0;
+  font-size: 12px;
+  color: #65676b;
+}
+
+.groupInfoButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #1877f2;
+  cursor: pointer;
+}
+
+.messageList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.messageWrapper {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageSender {
+  font-size: 12px;
+  color: #65676b;
+  margin-bottom: 4px;
+}
+
+.messageContent {
+  max-width: 60%;
+  padding: 8px 12px;
+  border-radius: 18px;
+  background-color: #e4e6eb;
+  position: relative;
+}
+
+.ownMessage {
+  align-items: flex-end;
+}
+
+.ownMessage .messageContent {
+  background-color: #0084ff;
+  color: white;
+}
+
+.messageText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.messageTime {
+  font-size: 11px;
+  color: #65676b;
+  margin-top: 4px;
+  display: block;
+}
+
+.ownMessage .messageTime {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.messageInput {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #ffffff;
+  border-top: 1px solid #e4e6eb;
+}
+
+.messageInput input {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f2f5;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.messageInput input:focus {
+  outline: none;
+}
+
+.sendButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #0084ff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sendButton:disabled {
+  background-color: #e4e6eb;
+  cursor: not-allowed;
+}
+
+.sendButton:hover:not(:disabled) {
+  background-color: #0073e6;
+}

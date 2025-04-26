@@ -1,0 +1,446 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  background: #1a1a3d;
+  color: #00f7ff;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+.chat {
+  width: 100%;
+  max-width: 600px;
+}
+
+.contacts, .groups {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  background: #1a1a3d;
+  color: #00f7ff;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+.chatList {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+}
+
+.section {
+  padding: 20px;
+  border-bottom: 1px solid #e4e6eb;
+  background: rgba(0, 247, 255, 0.05);
+  border: 1px solid #00f7ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 247, 255, 0.3);
+}
+
+.section h3 {
+  color: #00f7ff;
+  margin-bottom: 15px;
+}
+
+.section input {
+  background: #2a2a5d;
+  border: 1px solid #00f7ff;
+  color: #00f7ff;
+  padding: 12px;
+  width: calc(100% - 26px);
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.section input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #00f7ff;
+}
+
+.section button {
+  background: #00f7ff;
+  color: #1a1a3d;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.section button:hover {
+  background: #00d7dd;
+  box-shadow: 0 0 10px #00f7ff;
+}
+
+.group {
+  background: #2a2a5d;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 247, 255, 0.3);
+}
+
+.message {
+  background: #2a2a5d;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 247, 255, 0.3);
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #a0f0ff;
+  margin-top: 5px;
+}
+
+.walletInfo {
+  background: rgba(0, 247, 255, 0.05);
+  border: 1px solid #00f7ff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.walletInfo p {
+  margin: 0;
+  font-weight: bold;
+  color: #00f7ff;
+}
+
+.disconnectButton {
+  background: rgba(255, 100, 100, 0.2);
+  color: #ff6464;
+  border: 1px solid #ff6464;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.disconnectButton:hover {
+  background: rgba(255, 100, 100, 0.4);
+  box-shadow: 0 0 10px #ff6464;
+}
+
+.connectSection {
+  background: rgba(0, 247, 255, 0.05);
+  border: 1px solid #00f7ff;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.connectSection p {
+  margin-bottom: 15px;
+  color: #00f7ff;
+}
+
+.connectSection button {
+  background: #00f7ff;
+  color: #1a1a3d;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.connectSection button:hover {
+  background: #00d7dd;
+  box-shadow: 0 0 10px #00f7ff;
+}
+
+.wrongNetwork {
+  background: rgba(255, 100, 100, 0.1);
+  border: 1px solid #ff6464;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wrongNetwork p {
+  margin-bottom: 15px;
+  color: #ff6464;
+}
+
+.switchNetworkButton {
+  background: #ff6464;
+  color: #1a1a3d;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.switchNetworkButton:hover {
+  background: #ff8080;
+  box-shadow: 0 0 10px #ff6464;
+}
+
+.networkBadge {
+  background: rgba(0, 247, 255, 0.2);
+  color: #00f7ff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  margin-right: 10px;
+  border: 1px solid #00f7ff;
+}
+
+.lastMessage {
+  color: #65676b;
+  font-size: 13px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #2a2a5d;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 247, 255, 0.3);
+  margin: 0;
+  font-weight: bold;
+  color: #00f7ff;
+}
+
+.newChatButton {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  background: rgba(255, 100, 100, 0.2);
+  color: #ff6464;
+  border: 1px solid #ff6464;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.contactItem, .groupItem {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+  background: #00f7ff;
+  color: #1a1a3d;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+/* Wallet Connect Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #1a1a3d;
+  border: 2px solid #00f7ff;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.5);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(0, 247, 255, 0.3);
+}
+
+.modalHeader h3 {
+  color: #00f7ff;
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: #00f7ff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  color: #ff6464;
+}
+
+.modalContent {
+  padding: 20px;
+}
+
+.modalContent p {
+  margin-bottom: 20px;
+  color: #00f7ff;
+}
+
+.walletSectionTitle {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #00f7ff;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 247, 255, 0.2);
+  padding-bottom: 5px;
+}
+
+.walletOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.walletOption {
+  background: rgba(0, 247, 255, 0.1);
+  border: 1px solid #00f7ff;
+  color: #00f7ff;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.walletOption:hover:not(:disabled) {
+  background: rgba(0, 247, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+
+.walletOption:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.walletIcon {
+  font-size: 24px;
+  margin-right: 15px;
+  display: inline-block;
+  min-width: 24px;
+  text-align: center;
+}
+
+.connectingIndicator {
+  margin-left: auto;
+  font-style: italic;
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+
+.walletNote {
+  font-size: 0.8em;
+  opacity: 0.7;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+
+.noWallets {
+  text-align: center;
+  color: #ff6464;
+  background: rgba(255, 100, 100, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 100, 100, 0.3);
+} 
