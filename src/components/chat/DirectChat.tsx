@@ -46,7 +46,7 @@ export function DirectChat({ recipientAddress, hideHeader = false, onBack }: Dir
       }
       
       // Pass isPolling flag to fetchMessages to handle differently
-      await fetchMessages(recipientAddress, false, isPolling);
+      await fetchMessages(recipientAddress, false);
       
       // Only fetch username info during initial load, not during polling
       if (!isPolling) {
